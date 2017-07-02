@@ -1,0 +1,19 @@
+<view class="container"  wx:for="{{lists}}">
+ <view class="f-name">{{item.name}}</view>
+ <view class="imgs">
+    <image src="http://127.0.0.1:8080/server/images/{{item.img_lg}}"></image>
+ </view>
+ <view class="material">{{item.material}}</view>
+ <view class="detail">
+    {{item.detail}}
+ </view>
+ <view class="price">{{item.price}}￥</view>
+ <view class="btns">
+     <navigator url="../order2/order2">
+          <button type="primary" size="mini" class="btn"> 我要下单 </button>
+     </navigator>
+    <navigator url="../index2/index2">
+        <button type="warn" size="mini" class="btn"> 我再看看 </button>
+    </navigator>
+ </view>
+</view>

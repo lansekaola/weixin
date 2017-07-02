@@ -1,0 +1,27 @@
+<view class="container">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section">
+            <view class="user__name">联系人：</view>
+            <input name="input" bindinput="aaa" type="text" placeholder="请输入姓名" focus/>
+        </view>
+        <view class="user__name">性别：</view>
+        <radio-group name="radio-group">
+              <label><radio value="1" name="sex" bindtap="bbb"/>先生</label>
+              <label><radio value="2" name="sex" bindtap="ccc"/>女士</label>
+        </radio-group>
+        <view class="section">
+              <view class="user__phone">手机号码：</view>
+              <input name="input" type="number" placeholder="请输入手机号" focus/>
+        </view>
+        <view class="section">
+          <view class="user__addr">送餐地址：</view>
+          <textarea placeholder="请输入送餐地址"/>
+        </view>
+        <view class="btn-area">
+            <button formType="submit" class="sub">提交</button>
+            <navigator url="../index2/index2">
+		<button formType="reset" class="res">取消</button>
+	    </navigator>
+        </view>
+    </form>
+</view>

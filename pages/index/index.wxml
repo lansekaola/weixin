@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <!--头部区域-->
+    <view class="header">
+  <!--天气和地理坐标-->
+       <view class="location">
+         <view class="addr">
+          <image src="../images/location.png"></image>
+         {{address}}</view>
+         <view class="weather">
+          <image src="{{tu}}" style="width:70rpx; height:50rpx;"></image>
+         {{weather}}</view>
+       </view>
+  <!--搜索-->
+    <view class="search">
+      <navigator url="/pages/index/index">
+      <image src="../images/search.png" style="width:40rpx; height:40rpx; vertical-align:-8rpx;"></image>
+        搜索商品、水果名称
+      </navigator>
+    </view>
+  <!--快捷搜索-->
+    <view class="quicklink">
+      <navigator url="../detail/detail"> 蓝莓</navigator>
+      <navigator url="../detail/detail"> 草莓</navigator>
+      <navigator url="../detail/detail"> 芒果</navigator>
+      <navigator url="../detail/detail"> 油桃</navigator>
+      <navigator url="../detail/detail"> 葡萄</navigator>
+    </view>
+  </view>
+  <!--下面详细的水果列表异步请求-->
+  <view class="cnt" wx:for="{{lists}}">
+    <navigator  url="../detail/detail?id={{item.did}}" class="li">
+      <view class="left">
+        <image src="http://127.0.0.1:8080/server/images/{{item.img_sm}}"></image>	
+      </view>
+      <view class="right">
+      <view class="title">{{item.name}}</view>
+      <view class="price">{{item.price}}￥</view>
+      <view class="material">{{item.material}}</view>
+      </view>
+    </navigator>
+  </view>
+  <!--加载更多按钮-->
+ <button wx:if="{{show}}" type="primary" size="default" loading="true" bindtap="loadMore" class="other-btn"> 点击加载更多 </button>
+ <!--没有更多商品-->
+ <button wx:else type="warn" size="default" class="other-btn"> 已经到底了亲！ </button>
+</view>
+

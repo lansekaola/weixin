@@ -1,0 +1,111 @@
+/*header*/
+
+.header{
+  background-color: #efc36f;
+  display: block;
+}
+.header .location{
+  box-sizing: border-box;
+  font-weight: 900;
+  height:75rpx; line-height: 75rpx;
+  width:750rpx;
+  padding-left: 0rpx;
+}
+.header .location  .addr image{
+  width:37.5rpx;
+  height:50rpx;
+  vertical-align: -10rpx;
+  margin-left:10rpx;
+}
+.header .location .addr{
+  float:left;
+  width:485rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.header .location .weather{
+  float:right;
+  width:200rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.header .location .weather image{
+  vertical-align:-11rpx;
+ }
+
+.loading{
+  height: 20px;
+  margin-top: 5px;
+  width:750rpx;
+  background-color: #fff;
+  background:#fff url(../images/loading.gif) no-repeat center;
+  background-size: contain;
+}
+.header .search{
+  height: 70rpx;
+  margin-top: 10rpx;
+  color:#ccc;
+  line-height: 70rpx;
+  text-align: center;
+ }
+.header .search navigator{
+ width:600rpx;
+ height:100%;
+ background-color:#fff;
+ margin: 0 auto;
+ border-radius: 40rpx;
+}
+
+
+.header .quicklink{
+  padding:10rpx 75rpx;
+ }
+.header .quicklink navigator{
+  display:inline-block;
+  padding:0rpx 15rpx;
+ }
+
+/*下面详细的水果列表异步请求*/
+.cnt navigator{
+  display: block;
+  width:750rpx;
+  height:110px;
+  border-bottom:1px solid #ccc;
+  margin-bottom:2rpx;
+}
+.cnt navigator .left{
+  width:150rpx;
+  height: 150rpx;
+  float: left;
+}
+.cnt navigator .left image{
+  width:100%;
+  height:100%;
+  display: block;
+  margin-top:30rpx;
+}
+.cnt navigator .right{
+  margin-top:5rpx;
+  width:580rpx;
+  height:150rpx;
+  float:left;
+  padding-left:20rpx;
+  font-family:'SimHei';
+}
+.cnt navigator .right .title{
+  font-size: 40rpx;
+  color:#000;  
+}
+.cnt navigator .right .price{
+  font-size: 30rpx;
+  color:#e4393c;
+  font-weight:bold;
+}
+/*点击加载更多按钮*/
+.other-btn{
+  width:750rpx;
+  margin-top:10rpx;
+  font-weight:bold;
+}

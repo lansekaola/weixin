@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="title">
+        我的订单
+    </view>
+    <view class="myOrder">
+        <view class="tab-header">
+            <view class="li">编号</view>
+            <view class="li">鲜果</view>
+            <view class="li">下单时间</view>
+            <view class="li">联系人</view>
+        </view>
+        <view class="tab-body">
+            <view class="li">1</view>
+            <navigator class="li">
+                <image src="../images/chengzi-bg.jpg"></image>
+            </navigator>
+            <view class="li">2017/6/30</view>
+            <view class="li">冯淑荣</view>
+        </view>
+        <view class="tab-body">
+            <view class="li">2</view>
+            <navigator class="li">
+                <image src="../images/chengzi-bg.jpg"></image>
+            </navigator>
+            <view class="li">2017/6/30</view>
+            <view class="li">冯淑荣</view>
+        </view>
+    </view>
+</view>

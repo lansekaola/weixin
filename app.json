@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/index2/index2",
+    "pages/order2/order2"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#efc36f",
+    "navigationBarTitleText": "鲜果到家",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#ccc",
+    "selectedColor":"#efc36f",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"pages/images/home.png",
+        "selectedIconPath":"pages/images/home_active.png"
+      },
+
+      {
+        "pagePath":"pages/order/order",
+        "text":"订单",
+        "iconPath":"pages/images/order.png",
+        "selectedIconPath":"pages/images/order_active.png"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "text":"个人中心",
+        "iconPath":"pages/images/user.png",
+        "selectedIconPath":"pages/images/user_active.png"
+      }
+    ]
+  }
+}

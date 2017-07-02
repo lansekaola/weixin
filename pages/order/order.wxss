@@ -1,0 +1,24 @@
+.container{
+    padding:10rpx;
+}
+.container input,.section textarea{
+    border:1px solid #ddd;
+    border-radius:8rpx;
+}
+.container .section{
+    margin:40rpx 2rpx;
+}
+.container .section textarea{
+    width:100%;
+}
+.container .btn-area .sub , .res{
+    background:#48C23D;
+    font-weight:bold;
+    margin:10rpx 0;
+}
+.container .btn-area .res{
+     background:#e4393c;
+}
+.container .user__name ,.user__name , .user__phone ,.user__addr{
+    font-weight:bold;
+}
